@@ -1,0 +1,60 @@
+@import url("./banner.css");
+@import url("./benefit.css");
+@import url("./disclaimer.css");
+@import url("./footer.css");
+@import url("./testimonial.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: RalewayRegular;
+  src: url(../fonts/Raleway/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: RalewayMedium;
+  src: url(../fonts/Raleway/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: RalewaySemiBold;
+  src: url(../fonts/Raleway/Raleway-SemiBold.ttf);
+}
+@font-face {
+  font-family: RalewayBold;
+  src: url(../fonts/Raleway/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: RalewayExtraBold;
+  src: url(../fonts/Raleway/Raleway-ExtraBold.ttf);
+}
+:root {
+  /* font */
+  --primary-font: #f17b3b;
+  --secondary-font: #81a7a7;
+  --tertiary-font: #ffffff;
+  --quaternary-font: #000000;
+  --benefits-font: #1ab164;
+  --testimonial-name-font: #733a7e;
+  --testimonial-des-font: #427779;
+  --desclaimer-privacy-font: #707070;
+  /* background */
+  --drop-shadow: #00000031;
+  --footer-bg: #1db0ea;
+  --carousel: #7c7f80;
+  --testimonial-bg: #f4fbfc;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* header {
+  width: 100%;
+  background: linear-gradient(
+    rgba(15, 144, 183, 0.29),
+    rgba(170, 255, 199, 0.29),
+    rgba(255, 255, 255, 0)
+  );
+} */

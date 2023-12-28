@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/styless.css" />
+</head>
+
+<body>
+  <header class="application__header">
+    <div class="application__header__wrapper">
+      <nav class="application__header__navbar">
+        <picture>
+          <source media="(min-width:768px)" srcset="./assets/logo_desktop.png" />
+          <source media="(min-width:320px) and (max-width:767px)" srcset="./assets/logo_mobile.png" />
+          <img src="./assets/logo_mobile.png" alt="Company Logo" />
+        </picture>
+      </nav>
+      <section class="application__header__wrapper__hero">
+        <!-- left side -->
+        <div class="application__header__wrapper__hero__banner">
+          <div class="header__wrapper__hero__banner__customers">
+            <img src="./assets/customers.svg" alt="happy customers" />
+          </div>
+          <div class="header__wrapper__hero__banner__heading">
+            <h1>Save upto 70%* on your car insurance premium</h1>
+          </div>
+          <div class="header__wrapper__hero__banner__car">
+            <picture>
+              <source media="(min-width:768px)" srcset="./assets/car_desktop.png" width="596.12px" height="223.85px" />
+              <source media="(min-width:320px) and (max-width:767px)" srcset="./assets/car_mobile.png" width="294.84px"
+                height="110.72px" />
+              <img src="./assets/car_mobile.png" alt="car" width="596.12px" height="223.85px" />
+            </picture>
+          </div>
+        </div>
+        <!-- right side -->
+        <div class="application__header__wrapper__hero__form">
+          <form>
+            <h2 class="hero__form__heading">
+              Get free quote <br />
+              and buy policy instantly online
+            </h2>
+            <div class="hero__form__input__policy">
+              <label for="policy">Policy Type*</label>
+              <select name="policy" id="policy">
+                <option value="" disabled selected>Select one:</option>
+                <option value="Two wheeler">Two wheeler</option>
+                <option value="four wheeler">four wheeler</option>
+              </select>
+            </div>
+            <div class="hero__form__input__registration">
+              <label for="Vechile-registration">Vechile registration no*</label>
+              <input type="tel" name="Vechile-registration" id="Vechile-registration" />
+            </div>
+            <div class="hero__form__input__mobile">
+              <label for="mobile">Mobile no.</label>
+              <input type="tel" name="mobile" id="mobile">
+            </div>
+            <div class="hero__form__input__email">
+              <label for="email">Email address</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="hero__form__input__checkbox">
+              <input type="checkbox" id="mark" name="mark" value="mark">
+              <label for="mark"> I agree for IFFCO TOKIO to contact me through phone/sms/email </label>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </header>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="container__banner-img">
+          <picture>
+            <source
+              media="(min-width:320px) and (max-width:767px)"
+              srcset="./assets/images/mob.png"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="./assets/images/desk.png"
+            />
+
+            <img src="./assets/images/desk.png" alt="product-image" />
+          </picture>
+        </div>
+        <div class="container__details">
+          <p class="container__details__title">PERFUME</p>
+          <!-- <div class="container__details__heading">
+            <h1>Gabrielle Essence Eau De Parfum</h1>
+          </div> -->
+          <h1 class="container__details__heading">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+
+          <p class="container__details__description">
+            A floral, solar and voluptuous interpreting composed by Olivier
+            Polge , Perfumer-Creator for the House of CHANEL.
+          </p>
+          <!-- <div class="container__details__price">
+            <p class="container__details__price__actual">
+              $149,99 &nbsp;<sup>$169,99</sup>
+            </p>
+          </div> -->
+          <p class="container__details__price">
+            $149,99 &nbsp;<sup>$169,99</sup>
+          </p>
+          <div class="container__details__btn">
+            <!-- <img src="./assets/images/shopping_cart.svg" alt="cart-icon" />
+            <span>Add to Cart</span> -->
+            <a href="#"
+              ><img src="./assets/images/shopping_cart.svg" alt="cart-btn"
+            /></a>
+            <span>Add to cart</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- picture tag, margin, line height, anchor tag instead of button -->

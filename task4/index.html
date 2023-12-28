@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #007065;
+      }
+      .outer-traingle {
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 200px solid #00a79d;
+      }
+      .second-traingle {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 200px solid #f5c181;
+      }
+      .inner-trangle {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 200px solid #ffeecf;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-traingle">
+      <div class="second-traingle">
+        <div class="inner-trangle"></div>
+      </div>
+    </div>
+  </body>
+</html>

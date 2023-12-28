@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <form autocomplete="on" name="job-form">
+      <h1>Job Application Form</h1>
+      <!-- name -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <!-- email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <!-- password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <!-- phone number -->
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required />
+      <!-- dob -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+      <!-- city -->
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required />
+      <!-- pin code -->
+      <label for="pincode">Pin Code:</label>
+      <input type="text" id="pincode" name="pincode" required />
+      <!-- position -->
+      <label for="position">Position:</label>
+      <select name="position" id="position" required>
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+        <option value="fullstack">Fullstack</option>
+      </select>
+      <!-- education -->
+      <label for="education">Education:</label>
+      <input type="text" id="education" name="education" required />
+      <!-- exp -->
+      <label for="experience">Work Experience:</label>
+      <textarea name="experience" id="experience" cols="50" rows="5"></textarea>
+      <!-- skills -->
+      <label for="skills">skills:</label>
+      <label for="html"
+        ><input type="checkbox" id="html" name="tech" value="html" />HTML</label
+      >
+      <label for="css"
+        ><input type="checkbox" id="css" name="tech" value="css" />CSS</label
+      >
+      <label for="js"
+        ><input
+          type="checkbox"
+          id="js"
+          name="tech"
+          value="js"
+        />JavaScript</label
+      >
+      <!-- gender -->
+      <label for="gender">select gender:</label>
+
+      <label for="male"
+        >Male<input type="radio" id="male" name="gender" value="male"
+      /></label>
+      <label for="female"
+        >Female<input type="radio" id="female" name="gender" value="female"
+      /></label>
+      <label for="other"
+        >Other<input
+          type="radio"
+          id="other"
+          name="gender"
+          value="other" /></label
+      ><br />
+      <!-- call time -->
+
+      <label for="call-time">Preferred Time for Call:</label>
+      <input type="datetime-local" id="call-time" name="call-time" required />
+      <!-- resume -->
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" name="resume" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

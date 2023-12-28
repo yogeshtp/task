@@ -1,0 +1,27 @@
+footer {
+  margin-top: 50px;
+  width: 100%;
+  /* margin: 0 auto;
+  max-width: 1118px; */
+  background-color: var(--footer-bg);
+  font-family: RalewaySemiBold;
+}
+footer p {
+  line-height: 36px;
+  color: var(--tertiary-font);
+  font-size: 18px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 13px;
+}
+@media screen and (max-width: 767px) {
+  footer {
+    margin-top: 52px;
+  }
+  footer p {
+    font-size: 16px;
+    line-height: 36px;
+    padding-top: 12px;
+    padding-bottom: 16px;
+  }
+}

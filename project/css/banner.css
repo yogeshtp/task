@@ -1,0 +1,251 @@
+.header__wrapper {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.29),
+    rgba(170, 255, 199, 0.29),
+    rgba(15, 144, 183, 0.29)
+  );
+}
+
+/* ****************************************************
+                  navbar
+*********************************** */
+
+.header__navbar__logo {
+  max-width: 1218px;
+  display: flex;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .header__navbar__logo {
+    justify-content: center;
+  }
+}
+
+/* hero */
+
+.hero__banner__container {
+  position: relative;
+}
+
+.hero__banner__container__wrapper {
+  max-width: 1218px;
+  display: grid;
+  grid-template-columns: 597px 450px;
+  grid-row-gap: 77px;
+  gap: 57px;
+  padding-top: 23px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* grid start */
+
+.hero__form {
+  grid-row: span 3;
+}
+
+.hero__details-ballon {
+  grid-row-start: 0;
+  grid-row-end: 1;
+}
+
+.hero__details-title {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.hero__details-car {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/* grid end */
+
+.hero__bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../assets/Group\ 523.svg);
+  filter: grayscale(30%);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  object-fit: contain;
+  z-index: -1;
+}
+
+.hero__details {
+  display: flex;
+  flex-direction: column;
+  gap: 77px;
+  max-width: 596px;
+}
+
+.hero__details-ballon {
+  width: 112px;
+}
+
+.hero__details-title {
+  max-width: 544px;
+  color: var(--primary-font);
+  font-size: 48px;
+  font-family: RalewayBold;
+  line-height: 56px;
+  text-align: center;
+}
+
+.hero__form {
+  max-width: 450px;
+  padding-top: 17px;
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-bottom: 46px;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 9px 40px var(--drop-shadow);
+}
+
+.hero__form__heading {
+  color: var(--primary-font);
+  text-align: center;
+  font-size: 24px;
+  font-family: RalewayBold;
+  line-height: 29px;
+  margin-bottom: 11px;
+}
+
+.hero__form__input {
+  margin-bottom: 23px;
+}
+
+.hero__form__input:last-child {
+  margin-bottom: 35px;
+}
+
+.hero__form__input label {
+  color: #000000;
+  font-size: 10px;
+  font-family: RalewayMedium;
+  line-height: 11px;
+  margin-bottom: 10px;
+}
+
+.hero__form__input input,
+.hero__form__input select {
+  width: 100%;
+  border: 1px solid var(--secondary-font);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 14px;
+}
+
+.hero__form__input__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__form__input__btn button {
+  padding: 14px 42px;
+  margin: auto;
+  color: #ffffff;
+  background-color: var(--primary-font);
+  /* text-align: center; */
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+}
+
+.hero__form__input-checkbox label {
+  margin-bottom: 0;
+}
+
+.hero__form__input-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero__form__input input[type="checkbox"] {
+  width: auto;
+}
+
+input[type="checkbox"] {
+  accent-color: red;
+}
+
+.hero__form__input select {
+  padding-right: 20px;
+  font-size: 17px;
+  line-height: 20px;
+  color: var(--secondary-font);
+}
+
+.hero__form__input input::placeholder {
+  font-size: 17px;
+  line-height: 20px;
+  color: var(--secondary-font);
+}
+
+@media screen and (max-width: 767px) {
+  .hero__banner__container__wrapper {
+    max-width: 542px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0;
+    gap: 0;
+    padding-top: 23px;
+  }
+
+  .hero__details-ballon {
+    display: none;
+  }
+
+  .hero__details-title {
+    color: #ffffff;
+    background-color: var(--primary-font);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 12px 0 14px;
+    text-align: center;
+  }
+
+  .hero__details-car {
+    grid-row-start: 3;
+    display: flex;
+    justify-content: end;
+  }
+
+  .hero__details-car img {
+    max-width: 295px;
+    height: auto;
+  }
+
+  .hero__form {
+    grid-row: span 1;
+    max-width: 542px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  .hero__form__heading {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .hero__form__input-checkbox {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero__banner__container {
+    padding: 0 50px;
+  }
+}

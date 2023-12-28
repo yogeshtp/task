@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/banner.css">
+</head>
+
+<body>
+    <section class="hero__section">
+        <div class="hero">
+            <div class="hero__bg"></div>
+            <!-- <div class="hero__details"> -->
+            <img class="hero__details-ballon" src="/assets/customers.svg" alt="ballon" />
+            <h1 class="hero__details-title">
+                Save upto 70%* on your car insurance premium
+            </h1>
+            <img class="hero__details-car" src="/assets/car_mobile.png" alt="car" />
+            <!-- </div> -->
+            <form class="hero__form">
+                <h3 class="hero__form__heading">
+                    Get free quote<br />and buy policy instantly online
+                </h3>
+                <div class="hero__form__input">
+                    <label for="policyType">Policy type <sup>*</sup></label><br />
+                    <select name="policyType" id="policyType" required>
+                        <option disabled selected value>Select Policy Type</option>
+                        <option value="two wheeler">Two Wheeler</option>
+                        <option value="three wheeler">Three Wheeler</option>
+                        <option value="four wheeler">Four Wheeler</option>
+                    </select>
+                </div>
+                <div class="hero__form__input">
+                    <label for="registrationNumber">Vehicle registration no*</label><br />
+                    <input type="text" name="registrationNumber" id="registrationNumber"
+                        placeholder="Enter registration no." />
+                </div>
+                <div class="hero__form__input">
+                    <label for="mobileNumber">Mobile no.</label><br />
+                    <input type="tel" name="mobileNumber" id="mobileNumber" placeholder="Enter mobile no." />
+                </div>
+                <div class="hero__form__input">
+                    <label for="emailAddress">Email address </label><br />
+                    <input type="email" name="emailAddress" id="emailAddress" placeholder="Enter mobile no." />
+                </div>
+                <div class="hero__form__input">
+                    <input type="checkbox" name="communicationServices" id="communicationServices"
+                        value="communicationServices" /> 
+                   <label for="communicationServices">I agree for IFFCO TOKIO to contact me through
+                        phone/sms/email</label><br />
+                     
+                </div>
+                <div class="hero__form__input__btn">
+                    <button type="submit" id="submitBtn">GET QUOTE</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

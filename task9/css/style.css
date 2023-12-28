@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: RalewayRegular;
+  src: url(../fonts/Raleway/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: RalewayMedium;
+  src: url(../fonts/Raleway/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: RalewaySemiBold;
+  src: url(../fonts/Raleway/Raleway-SemiBold.ttf);
+}
+@font-face {
+  font-family: RalewayBold;
+  src: url(../fonts/Raleway/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: RalewayExtraBold;
+  src: url(../fonts/Raleway/Raleway-ExtraBold.ttf);
+}
+:root {
+  /* font */
+  --primary-font: #f17b3b;
+  --secondary-font: #81a7a7;
+  --tertiary-font: #ffffff;
+  --quaternary-font: #000000;
+  --benefits-font: #1ab164;
+  --testimonial-name-font: #733a7e;
+  --testimonial-des-font: #427779;
+  --desclaimer-privacy-font: #707070;
+  /* background */
+  --drop-shadow: #00000031;
+  --footer-bg: #1db0ea;
+  --carousel: #7c7f80;
+  --testimonial-bg: #f4fbfc;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  background: linear-gradient(
+    rgba(15, 144, 183, 0.29),
+    rgba(170, 255, 199, 0.29),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+/* added new css file */
+/****************************************************** 
+                          key benefits 
+**************************************************************/
+.key__benefits .key__benefits__benefit {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 924px;
+}
+
+.key__benefits h2 {
+  text-align: center;
+  color: var(--benefits-font);
+  font-family: RalewayBold;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: capitalize;
+}
+
+.key__benefits__container {
+  padding-top: 50px;
+  padding-bottom: 61px;
+  display: flex;
+  background-color: yellow;
+  justify-content: space-evenly;
+}
+
+.key__benefits__elements {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.key__benefits__container span {
+  font-family: RalewayBold;
+  font-size: 11px;
+  margin-bottom: 11px;
+}
+
+.key__benefits__container p {
+  font-family: RalewayMedium;
+  font-size: 10px;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .key__benefits__container {
+    background-color: pink;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .slick-arrow::before {
+    color: var(--benefits-font);
+  }
+  .slick-initialized .slick-slide {
+    display: flex;
+  }
+}
+/* ***************************************************                                   customer testimonial 
+******************************************************/
+.testimonial {
+  background: url("../assets/testimonial_bg.svg");
+}
+.customer__testimonial {
+  padding-bottom: 30px;
+  max-width: 1118px;
+  margin: 0 auto;
+}
+.customer__testimonial h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-family: RalewayBold;
+  font-size: 40px;
+  line-height: 47px;
+}
+.customer__testimonial__carousel {
+  margin-top: 36px;
+}
+.slick-dots li button::before {
+  font-size: 10px;
+}
+@media screen and (max-width: 768px) {
+  .customer__testimonial {
+    width: 100%;
+  }
+  .customer__testimonial__carousel {
+    width: 100%;
+  }
+  .testimonial .slick-slide img {
+    margin: 0 auto;
+  }
+}
+
+/* ***************************************************                            disclaimer and privacy policy
+******************************************************/
+.disclaimer__privacy__policy {
+  margin-top: 71px;
+}
+.disclaimer__privacy {
+  max-width: 924px;
+  margin: 0 auto;
+}
+.disclaimer__privacy h4,
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.disclaimer__privacy p {
+  color: var(--desclaimer-privacy-font);
+  font-family: RalewayRegular;
+}
+.disclaimer__privacy h4 {
+  font-family: RalewayBold;
+}
+@media screen and (max-width: 767px) {
+  .disclaimer__privacy__policy {
+    margin: 50px 41px 0px;
+  }
+  .disclaimer__privacy {
+    width: 100%;
+  }
+  .disclaimer__privacy h4,
+  p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+/* ***************************************************                            footer
+******************************************************/
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: var(--footer-bg);
+  font-family: RalewaySemiBold;
+}
+footer p {
+  line-height: 36px;
+  color: var(--tertiary-font);
+  font-size: 18px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 13px;
+}
+@media screen and (max-width: 767px) {
+  footer {
+    margin-top: 52px;
+  }
+  footer p {
+    font-size: 16px;
+    line-height: 36px;
+    padding-top: 12px;
+    padding-bottom: 16px;
+  }
+}

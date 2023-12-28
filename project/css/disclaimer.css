@@ -1,0 +1,32 @@
+.disclaimer__privacy__policy {
+  margin-top: 71px;
+}
+.disclaimer__privacy {
+  max-width: 924px;
+  margin: 0 auto;
+}
+.disclaimer__privacy h4,
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.disclaimer__privacy p {
+  color: var(--desclaimer-privacy-font);
+  font-family: RalewayRegular;
+}
+.disclaimer__privacy h4 {
+  font-family: RalewayBold;
+}
+@media screen and (max-width: 767px) {
+  .disclaimer__privacy__policy {
+    margin: 50px 41px 0px;
+  }
+  .disclaimer__privacy {
+    width: 100%;
+  }
+  .disclaimer__privacy h4,
+  p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- box shadow -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6592cf;
+      }
+      .container {
+        background-color: #243d83;
+        width: 400px;
+        height: 200px;
+        position: relative;
+      }
+      .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: #eeb850;
+        box-shadow: 0 0 0 50px #6592cf, inset 0 0 0 65px #243d83;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>
