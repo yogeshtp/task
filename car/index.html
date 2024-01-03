@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="poppins__regular">
+  <!-- ------------------------------------------------------- 
+                              NAVIGATION BAR
+   ----------------------------------------------------------- -->
+  <!-- <header>
+    <nav class="fixed-layout flex-container flex--justify-space-between pt-33">
+     
+      <div class="logo flex-container flex-gap-10">
+        <img src="./assets/images/logo.png" alt="logo" />
+        <div class="logo__text">
+          <p class="logo__text--title poppins__semi fs-17">CarMazad</p>
+          <p class="logo__text--tagline poppins__regular fs-12">
+            House of Vehicles
+          </p>
+        </div>
+      </div>
+    
+      <div class="nav__menu flex-container flex--align-center fs-14">
+        <a class="nav__menu--elements" href="#">VEHICLES</a>
+        <a class="nav__menu--elements" href="#">FAQS</a>
+        <a class="nav__menu--elements" href="#">CONTACT US</a>
+        <a class="nav__menu--elements" href="#"><img src="./assets/svg/united_arab.svg" alt="unnited arab" /></a>
+        <button class="nav__menu--elements nav__btn flex-container flex--justify-center flex-gap-17">
+          <img src="./assets/images/profile_icon.png" width="15px" height="15px" alt="profile-icon" />
+          <span class="fs-14">SIGN IN</span>
+        </button>
+      </div>
+    </nav>
+  </header> -->
+  <!---------------------------------------------------------
+                         SEARCH SECTION
+  ------------------------------------------------------------->
+  <!-- <section class="search__section">
+    <div class="fixed-layout grid-container">
+      <div class="search__query">
+        <img src="./assets/svg/search-icon.svg" width="22px" alt="search icon" />
+        <input type="text" name="query" placeholder="totoya 2021" class="search__query--input" />
+        <select>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+      <div class="search__view">
+        <img src="./assets/icons/grid-view.svg" width="24px" alt="grid-view" />
+        <img src="./assets/icons/list view.svg" width="24px" alt="grid-view" />
+      </div>
+      <div class="search__filter">
+        <select>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        <div class="search__filter--mark flex-container flex--align-center">
+          <div class="search__filter--star">
+            <img src="./assets/svg/star.svg" alt="" />
+          </div>
+          <span class="fs-17 poppins__regular lh-26">Show Favorites</span>
+        </div>
+      </div>
+      <div class="search__event flex-container ">
+        <div class="search__event--live flex-container flex--justify-space-between ">
+          <input type="checkbox" />
+          <label for="live">Live Auctions</label>
+        </div>
+        <div class="search__event--soon">
+          <input type="checkbox" />
+          <label for="live">Coming Soon</label>
+        </div>
+        <div class="search__event--ended">
+          <input type="checkbox" />
+          <label for="live">Ended Auctions</label>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!------------------------------------------------------------ 
+                              car models
+     ---------------------------------------------------------->
+  <section class="listings mt-24">
+    <div class="fixed-layout listings-box">
+      <div class="listings__filter">
+        <form class="filter__form">
+          <div class="filter__form--company form-elements">
+            <select name="company" id="company">
+              <option value selected disabled>make</option>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+          <div class="filter__form--model form-elements">
+            <select name="company" id="company">
+              <option value selected disabled>model</option>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+          <div class="filter__form--city form-elements">
+            <select name="company" id="company">
+              <option value selected disabled>city</option>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+          <div class="filter__form--duration form-elements flex-container">
+            <select name="company" id="company">
+              <option value selected disabled>from</option>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+            <select name="company" id="company">
+              <option value selected disabled>to</option>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+          <div class="filter__form--auction-id form-elements">
+            <input type="text" placeholder="auction id" id="" />
+          </div>
+          <div class="filter__form--bid-range form-elements">
+            <label for="bid">Current Bid</label>
+            <input type="text" class="js-range-slider" name="my_range" value="" />
+          </div>
+          <div class="filter__form--submit flex-container">
+            <img src="./assets/icons/search__btn.svg" alt="search-btn" />
+            <span class="fs-14 lh-21">SEARCH</span>
+          </div>
+          <div class="filter__form--reset flex-container flex--justify-center">
+            <span class="fs-14 form-reset">RESET</span>
+          </div>
+        </form>
+      </div>
+      <!-- car listing -->
+      <div class="listings__product-box">
+        <!-- container -->
+        <div class="listings__product--container">
+          <!-- individual car 1 -->
+          <div class="cars-box">
+            <div class="car-box__header">
+              <p class="car-box__header--time fs-11 poppins__medium">
+                Thursday 12 Dec 2019 - 15:10
+              </p>
+            </div>
+            <div class="car-box__picture mt-8">
+              <div class="bookmark">
+                <input class="star--favourite" type="checkbox" title="bookmark">
+              </div>
+              <div class="car-box__picture--orderBtn">
+              </div>
+            </div>
+            <div class="car-box__title mt-12 flex-container flex--justify-space-between">
+              <span class="fs-17 poppins__semi">Toyota Camry SE</span>
+              <span class="fs-14 poppins__regular"> 2019 </span>
+            </div>
+            <div class="car-box__event-count mt-6 flex-container flex--justify-space-between poppins__regular">
+              <div class="event__cause flex-container .flex--align-center">
+                <img src="./assets/svg/accident.svg" alt="accident" />
+                <span class="fs-14">Accident</span>
+              </div>
+              <div class="event__views flex-container .flex--align-center">
+                <img src="./assets/svg/visible.svg" alt="visible" />
+                <span class="fs-14">7,732 Views</span>
+              </div>
+            </div>
+            <div class="car-box__location flex-container">
+              <img src="./assets/svg/location.svg" alt="location" />
+              <div class="car-box__address">
+                <p class="car-box__address--label fs-11">Location</p>
+                <p class="car-box__address--place fs-19 roboto__bold">
+                  Riyadh Yard, Saudi Arabia
+                </p>
+              </div>
+            </div>
+            <div class="car-box__bid-price flex-container flex--justify-space-between flex--align-center">
+              <div class="bid__price--sold flex-container">
+                <img src="./assets/svg/law.svg" alt="sold-for" />
+                <div class="bid__sold--price">
+                  <p class="bid__sold--label fs-11">Sold for</p>
+                  <p class="bid__sold--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="vertical-sepration"></div>
+              <div class="bid__price--buy flex-container">
+                <img src="./assets/svg/buy-price.svg" alt="sold-for" />
+                <div class="bid__buy--price">
+                  <p class="bid__buy--label fs-11">Buy now</p>
+                  <p class="bid__buy--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box__bid--expand flex-container">
+              <span class="fs-11 poppins__regular">View 3 Bids</span>
+              <img src="./assets/svg/expand-btn.svg" width="10px" alt="expand button" />
+            </div>
+            <div class="prev__bids mt-17 unactive">
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cars-box">
+            <div class="car-box__header">
+              <p class="car-box__header--time fs-11 poppins__medium">
+                Thursday 12 Dec 2019 - 15:10
+              </p>
+            </div>
+            <div class="car-box__picture mt-8">
+              <div class="bookmark">
+                <input class="star--favourite" type="checkbox" title="bookmark">
+              </div>
+              <div class="car-box__picture--orderBtn">
+              </div>
+            </div>
+            <div class="car-box__title mt-12 flex-container flex--justify-space-between">
+              <span class="fs-17 poppins__semi">Toyota Camry SE</span>
+              <span class="fs-14 poppins__regular"> 2019 </span>
+            </div>
+            <div class="car-box__event-count mt-6 flex-container flex--justify-space-between poppins__regular">
+              <div class="event__cause flex-container .flex--align-center">
+                <img src="./assets/svg/accident.svg" alt="accident" />
+                <span class="fs-14">Accident</span>
+              </div>
+              <div class="event__views flex-container .flex--align-center">
+                <img src="./assets/svg/visible.svg" alt="visible" />
+                <span class="fs-14">7,732 Views</span>
+              </div>
+            </div>
+            <div class="car-box__location flex-container">
+              <img src="./assets/svg/location.svg" alt="location" />
+              <div class="car-box__address">
+                <p class="car-box__address--label fs-11">Location</p>
+                <p class="car-box__address--place fs-19 roboto__bold">
+                  Riyadh Yard, Saudi Arabia
+                </p>
+              </div>
+            </div>
+            <div class="car-box__bid-price flex-container flex--justify-space-between flex--align-center">
+              <div class="bid__price--sold flex-container">
+                <img src="./assets/svg/law.svg" alt="sold-for" />
+                <div class="bid__sold--price">
+                  <p class="bid__sold--label fs-11">Sold for</p>
+                  <p class="bid__sold--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="vertical-sepration"></div>
+              <div class="bid__price--buy flex-container">
+                <img src="./assets/svg/buy-price.svg" alt="sold-for" />
+                <div class="bid__buy--price">
+                  <p class="bid__buy--label fs-11">Buy now</p>
+                  <p class="bid__buy--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box__bid--expand flex-container">
+              <span class="fs-11 poppins__regular">View 3 Bids</span>
+              <img src="./assets/svg/expand-btn.svg" width="10px" alt="expand button" />
+            </div>
+            <div class="prev__bids mt-17 unactive">
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cars-box">
+            <div class="car-box__header">
+              <p class="car-box__header--time fs-11 poppins__medium">
+                Thursday 12 Dec 2019 - 15:10
+              </p>
+            </div>
+            <div class="car-box__picture mt-8">
+              <div class="bookmark">
+                <input class="star--favourite" type="checkbox" title="bookmark">
+              </div>
+              <div class="car-box__picture--orderBtn">
+              </div>
+            </div>
+            <div class="car-box__title mt-12 flex-container flex--justify-space-between">
+              <span class="fs-17 poppins__semi">Toyota Camry SE</span>
+              <span class="fs-14 poppins__regular"> 2019 </span>
+            </div>
+            <div class="car-box__event-count mt-6 flex-container flex--justify-space-between poppins__regular">
+              <div class="event__cause flex-container .flex--align-center">
+                <img src="./assets/svg/accident.svg" alt="accident" />
+                <span class="fs-14">Accident</span>
+              </div>
+              <div class="event__views flex-container .flex--align-center">
+                <img src="./assets/svg/visible.svg" alt="visible" />
+                <span class="fs-14">7,732 Views</span>
+              </div>
+            </div>
+            <div class="car-box__location flex-container">
+              <img src="./assets/svg/location.svg" alt="location" />
+              <div class="car-box__address">
+                <p class="car-box__address--label fs-11">Location</p>
+                <p class="car-box__address--place fs-19 roboto__bold">
+                  Riyadh Yard, Saudi Arabia
+                </p>
+              </div>
+            </div>
+            <div class="car-box__bid-price flex-container flex--justify-space-between flex--align-center">
+              <div class="bid__price--sold flex-container">
+                <img src="./assets/svg/law.svg" alt="sold-for" />
+                <div class="bid__sold--price">
+                  <p class="bid__sold--label fs-11">Sold for</p>
+                  <p class="bid__sold--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="vertical-sepration"></div>
+              <div class="bid__price--buy flex-container">
+                <img src="./assets/svg/buy-price.svg" alt="sold-for" />
+                <div class="bid__buy--price">
+                  <p class="bid__buy--label fs-11">Buy now</p>
+                  <p class="bid__buy--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box__bid--expand flex-container">
+              <span class="fs-11 poppins__regular">View 3 Bids</span>
+              <img src="./assets/svg/expand-btn.svg" width="10px" alt="expand button" />
+            </div>
+            <div class="prev__bids mt-17 unactive">
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- car listing -->
+      <div class="listings__product-box">
+        <!-- container -->
+        <div class="listings__product--container">
+          <!-- individual car 1 -->
+          <div class="cars-box">
+            <div class="car-box__header">
+              <p class="car-box__header--time fs-11 poppins__medium">
+                Thursday 12 Dec 2019 - 15:10
+              </p>
+            </div>
+            <div class="car-box__picture mt-8">
+              <div class="bookmark">
+                <input class="star--favourite" type="checkbox" title="bookmark">
+              </div>
+              <div class="car-box__picture--orderBtn">
+              </div>
+            </div>
+            <div class="car-box__title mt-12 flex-container flex--justify-space-between">
+              <span class="fs-17 poppins__semi">Toyota Camry SE</span>
+              <span class="fs-14 poppins__regular"> 2019 </span>
+            </div>
+            <div class="car-box__event-count mt-6 flex-container flex--justify-space-between poppins__regular">
+              <div class="event__cause flex-container .flex--align-center">
+                <img src="./assets/svg/accident.svg" alt="accident" />
+                <span class="fs-14">Accident</span>
+              </div>
+              <div class="event__views flex-container .flex--align-center">
+                <img src="./assets/svg/visible.svg" alt="visible" />
+                <span class="fs-14">7,732 Views</span>
+              </div>
+            </div>
+            <div class="car-box__location flex-container">
+              <img src="./assets/svg/location.svg" alt="location" />
+              <div class="car-box__address">
+                <p class="car-box__address--label fs-11">Location</p>
+                <p class="car-box__address--place fs-19 roboto__bold">
+                  Riyadh Yard, Saudi Arabia
+                </p>
+              </div>
+            </div>
+            <div class="car-box__bid-price flex-container flex--justify-space-between flex--align-center">
+              <div class="bid__price--sold flex-container">
+                <img src="./assets/svg/law.svg" alt="sold-for" />
+                <div class="bid__sold--price">
+                  <p class="bid__sold--label fs-11">Sold for</p>
+                  <p class="bid__sold--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="vertical-sepration"></div>
+              <div class="bid__price--buy flex-container">
+                <img src="./assets/svg/buy-price.svg" alt="sold-for" />
+                <div class="bid__buy--price">
+                  <p class="bid__buy--label fs-11">Buy now</p>
+                  <p class="bid__buy--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box__bid--expand flex-container">
+              <span class="fs-11 poppins__regular">View 3 Bids</span>
+              <img src="./assets/svg/expand-btn.svg" width="10px" alt="expand button" />
+            </div>
+            <div class="prev__bids mt-17 unactive">
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cars-box">
+            <div class="car-box__header">
+              <p class="car-box__header--time fs-11 poppins__medium">
+                Thursday 12 Dec 2019 - 15:10
+              </p>
+            </div>
+            <div class="car-box__picture mt-8">
+              <div class="bookmark">
+                <input class="star--favourite" type="checkbox" title="bookmark">
+              </div>
+              <div class="car-box__picture--orderBtn">
+              </div>
+            </div>
+            <div class="car-box__title mt-12 flex-container flex--justify-space-between">
+              <span class="fs-17 poppins__semi">Toyota Camry SE</span>
+              <span class="fs-14 poppins__regular"> 2019 </span>
+            </div>
+            <div class="car-box__event-count mt-6 flex-container flex--justify-space-between poppins__regular">
+              <div class="event__cause flex-container .flex--align-center">
+                <img src="./assets/svg/accident.svg" alt="accident" />
+                <span class="fs-14">Accident</span>
+              </div>
+              <div class="event__views flex-container .flex--align-center">
+                <img src="./assets/svg/visible.svg" alt="visible" />
+                <span class="fs-14">7,732 Views</span>
+              </div>
+            </div>
+            <div class="car-box__location flex-container">
+              <img src="./assets/svg/location.svg" alt="location" />
+              <div class="car-box__address">
+                <p class="car-box__address--label fs-11">Location</p>
+                <p class="car-box__address--place fs-19 roboto__bold">
+                  Riyadh Yard, Saudi Arabia
+                </p>
+              </div>
+            </div>
+            <div class="car-box__bid-price flex-container flex--justify-space-between flex--align-center">
+              <div class="bid__price--sold flex-container">
+                <img src="./assets/svg/law.svg" alt="sold-for" />
+                <div class="bid__sold--price">
+                  <p class="bid__sold--label fs-11">Sold for</p>
+                  <p class="bid__sold--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="vertical-sepration"></div>
+              <div class="bid__price--buy flex-container">
+                <img src="./assets/svg/buy-price.svg" alt="sold-for" />
+                <div class="bid__buy--price">
+                  <p class="bid__buy--label fs-11">Buy now</p>
+                  <p class="bid__buy--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box__bid--expand flex-container">
+              <span class="fs-11 poppins__regular">View 3 Bids</span>
+              <img src="./assets/svg/expand-btn.svg" width="10px" alt="expand button" />
+            </div>
+            <div class="prev__bids mt-17 unactive">
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cars-box">
+            <div class="car-box__header">
+              <p class="car-box__header--time fs-11 poppins__medium">
+                Thursday 12 Dec 2019 - 15:10
+              </p>
+            </div>
+            <div class="car-box__picture mt-8">
+              <div class="bookmark">
+                <input class="star--favourite" type="checkbox" title="bookmark">
+              </div>
+              <div class="car-box__picture--orderBtn">
+              </div>
+            </div>
+            <div class="car-box__title mt-12 flex-container flex--justify-space-between">
+              <span class="fs-17 poppins__semi">Toyota Camry SE</span>
+              <span class="fs-14 poppins__regular"> 2019 </span>
+            </div>
+            <div class="car-box__event-count mt-6 flex-container flex--justify-space-between poppins__regular">
+              <div class="event__cause flex-container .flex--align-center">
+                <img src="./assets/svg/accident.svg" alt="accident" />
+                <span class="fs-14">Accident</span>
+              </div>
+              <div class="event__views flex-container .flex--align-center">
+                <img src="./assets/svg/visible.svg" alt="visible" />
+                <span class="fs-14">7,732 Views</span>
+              </div>
+            </div>
+            <div class="car-box__location flex-container">
+              <img src="./assets/svg/location.svg" alt="location" />
+              <div class="car-box__address">
+                <p class="car-box__address--label fs-11">Location</p>
+                <p class="car-box__address--place fs-19 roboto__bold">
+                  Riyadh Yard, Saudi Arabia
+                </p>
+              </div>
+            </div>
+            <div class="car-box__bid-price flex-container flex--justify-space-between flex--align-center">
+              <div class="bid__price--sold flex-container">
+                <img src="./assets/svg/law.svg" alt="sold-for" />
+                <div class="bid__sold--price">
+                  <p class="bid__sold--label fs-11">Sold for</p>
+                  <p class="bid__sold--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="vertical-sepration"></div>
+              <div class="bid__price--buy flex-container">
+                <img src="./assets/svg/buy-price.svg" alt="sold-for" />
+                <div class="bid__buy--price">
+                  <p class="bid__buy--label fs-11">Buy now</p>
+                  <p class="bid__buy--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box__bid--expand flex-container">
+              <span class="fs-11 poppins__regular">View 3 Bids</span>
+              <img src="./assets/svg/expand-btn.svg" width="10px" alt="expand button" />
+            </div>
+            <div class="prev__bids mt-17 unactive">
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- car listing -->
+      <div class="listings__product-box">
+        <!-- container -->
+        <div class="listings__product--container">
+          <!-- individual car 1 -->
+          <div class="cars-box">
+            <div class="car-box__header">
+              <p class="car-box__header--time fs-11 poppins__medium">
+                Thursday 12 Dec 2019 - 15:10
+              </p>
+            </div>
+            <div class="car-box__picture mt-8">
+              <div class="bookmark">
+                <input class="star--favourite" type="checkbox" title="bookmark">
+              </div>
+              <div class="car-box__picture--orderBtn">
+              </div>
+            </div>
+            <div class="car-box__title mt-12 flex-container flex--justify-space-between">
+              <span class="fs-17 poppins__semi">Toyota Camry SE</span>
+              <span class="fs-14 poppins__regular"> 2019 </span>
+            </div>
+            <div class="car-box__event-count mt-6 flex-container flex--justify-space-between poppins__regular">
+              <div class="event__cause flex-container .flex--align-center">
+                <img src="./assets/svg/accident.svg" alt="accident" />
+                <span class="fs-14">Accident</span>
+              </div>
+              <div class="event__views flex-container .flex--align-center">
+                <img src="./assets/svg/visible.svg" alt="visible" />
+                <span class="fs-14">7,732 Views</span>
+              </div>
+            </div>
+            <div class="car-box__location flex-container">
+              <img src="./assets/svg/location.svg" alt="location" />
+              <div class="car-box__address">
+                <p class="car-box__address--label fs-11">Location</p>
+                <p class="car-box__address--place fs-19 roboto__bold">
+                  Riyadh Yard, Saudi Arabia
+                </p>
+              </div>
+            </div>
+            <div class="car-box__bid-price flex-container flex--justify-space-between flex--align-center">
+              <div class="bid__price--sold flex-container">
+                <img src="./assets/svg/law.svg" alt="sold-for" />
+                <div class="bid__sold--price">
+                  <p class="bid__sold--label fs-11">Sold for</p>
+                  <p class="bid__sold--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="vertical-sepration"></div>
+              <div class="bid__price--buy flex-container">
+                <img src="./assets/svg/buy-price.svg" alt="sold-for" />
+                <div class="bid__buy--price">
+                  <p class="bid__buy--label fs-11">Buy now</p>
+                  <p class="bid__buy--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box__bid--expand flex-container">
+              <span class="fs-11 poppins__regular">View 3 Bids</span>
+              <img src="./assets/svg/expand-btn.svg" width="10px" alt="expand button" />
+            </div>
+            <div class="prev__bids mt-17 unactive">
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cars-box">
+            <div class="car-box__header">
+              <p class="car-box__header--time fs-11 poppins__medium">
+                Thursday 12 Dec 2019 - 15:10
+              </p>
+            </div>
+            <div class="car-box__picture mt-8">
+              <div class="bookmark">
+                <input class="star--favourite" type="checkbox" title="bookmark">
+              </div>
+              <div class="car-box__picture--orderBtn">
+              </div>
+            </div>
+            <div class="car-box__title mt-12 flex-container flex--justify-space-between">
+              <span class="fs-17 poppins__semi">Toyota Camry SE</span>
+              <span class="fs-14 poppins__regular"> 2019 </span>
+            </div>
+            <div class="car-box__event-count mt-6 flex-container flex--justify-space-between poppins__regular">
+              <div class="event__cause flex-container .flex--align-center">
+                <img src="./assets/svg/accident.svg" alt="accident" />
+                <span class="fs-14">Accident</span>
+              </div>
+              <div class="event__views flex-container .flex--align-center">
+                <img src="./assets/svg/visible.svg" alt="visible" />
+                <span class="fs-14">7,732 Views</span>
+              </div>
+            </div>
+            <div class="car-box__location flex-container">
+              <img src="./assets/svg/location.svg" alt="location" />
+              <div class="car-box__address">
+                <p class="car-box__address--label fs-11">Location</p>
+                <p class="car-box__address--place fs-19 roboto__bold">
+                  Riyadh Yard, Saudi Arabia
+                </p>
+              </div>
+            </div>
+            <div class="car-box__bid-price flex-container flex--justify-space-between flex--align-center">
+              <div class="bid__price--sold flex-container">
+                <img src="./assets/svg/law.svg" alt="sold-for" />
+                <div class="bid__sold--price">
+                  <p class="bid__sold--label fs-11">Sold for</p>
+                  <p class="bid__sold--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="vertical-sepration"></div>
+              <div class="bid__price--buy flex-container">
+                <img src="./assets/svg/buy-price.svg" alt="sold-for" />
+                <div class="bid__buy--price">
+                  <p class="bid__buy--label fs-11">Buy now</p>
+                  <p class="bid__buy--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box__bid--expand flex-container">
+              <span class="fs-11 poppins__regular">View 3 Bids</span>
+              <img src="./assets/svg/expand-btn.svg" width="10px" alt="expand button" />
+            </div>
+            <div class="prev__bids mt-17 unactive">
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cars-box">
+            <div class="car-box__header">
+              <p class="car-box__header--time fs-11 poppins__medium">
+                Thursday 12 Dec 2019 - 15:10
+              </p>
+            </div>
+            <div class="car-box__picture mt-8">
+              <div class="bookmark">
+                <input class="star--favourite" type="checkbox" title="bookmark">
+              </div>
+              <div class="car-box__picture--orderBtn">
+              </div>
+            </div>
+            <div class="car-box__title mt-12 flex-container flex--justify-space-between">
+              <span class="fs-17 poppins__semi">Toyota Camry SE</span>
+              <span class="fs-14 poppins__regular"> 2019 </span>
+            </div>
+            <div class="car-box__event-count mt-6 flex-container flex--justify-space-between poppins__regular">
+              <div class="event__cause flex-container .flex--align-center">
+                <img src="./assets/svg/accident.svg" alt="accident" />
+                <span class="fs-14">Accident</span>
+              </div>
+              <div class="event__views flex-container .flex--align-center">
+                <img src="./assets/svg/visible.svg" alt="visible" />
+                <span class="fs-14">7,732 Views</span>
+              </div>
+            </div>
+            <div class="car-box__location flex-container">
+              <img src="./assets/svg/location.svg" alt="location" />
+              <div class="car-box__address">
+                <p class="car-box__address--label fs-11">Location</p>
+                <p class="car-box__address--place fs-19 roboto__bold">
+                  Riyadh Yard, Saudi Arabia
+                </p>
+              </div>
+            </div>
+            <div class="car-box__bid-price flex-container flex--justify-space-between flex--align-center">
+              <div class="bid__price--sold flex-container">
+                <img src="./assets/svg/law.svg" alt="sold-for" />
+                <div class="bid__sold--price">
+                  <p class="bid__sold--label fs-11">Sold for</p>
+                  <p class="bid__sold--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="vertical-sepration"></div>
+              <div class="bid__price--buy flex-container">
+                <img src="./assets/svg/buy-price.svg" alt="sold-for" />
+                <div class="bid__buy--price">
+                  <p class="bid__buy--label fs-11">Buy now</p>
+                  <p class="bid__buy--price fs-19 roboto__bold">
+                    23,911 <span class="fs-13 roboto__regular">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box__bid--expand flex-container">
+              <span class="fs-11 poppins__regular">View 3 Bids</span>
+              <img src="./assets/svg/expand-btn.svg" width="10px" alt="expand button" />
+            </div>
+            <div class="prev__bids mt-17 unactive">
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+              <div class="prev__bids--items preBid-item">
+                <div class="prev__bid-date">
+                  <img src="./assets/svg/prev__bid__Date.svg" alt="bid date" />
+                  <span class="prev__bid-time fs-11">10 Dec 2019 - 20:05</span>
+                </div>
+                <div class="prev__bid--person">
+                  <div class="prev__bid--title">
+                    <span class="prev__bid--person-id fs-14">1.</span>
+                    <span class="prev__bid--person-name fs-14">JOVANA MILIC</span>
+                  </div>
+                  <p class="prev__bid--person-price fs-17">
+                    10,500 <span class="fs-12">SAR</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <script src="./js/list.js"></script>
+</body>
+
+</html>

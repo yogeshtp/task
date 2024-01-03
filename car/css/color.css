@@ -1,0 +1,42 @@
+:root {
+  --body-border: #eeeeee;
+  --body-bg: #f6f8fd;
+  --search-bg: #6b1d57;
+  --primary-bg: #ffffff;
+  --card-shadow: #44444414;
+  --card-border: #ebebeb;
+  --expanded-border: #e8e8e8;
+  --btn-bg: #74b946;
+
+  --order-shadow: #a375ffb5;
+  --sign-search-shadow: #43425d40;
+  --magnifier-dropdown: #9f9f9f;
+  --input-bottom-border: #1b1b1b;
+  --star-shadow: #4444441f;
+  --footer-border: #e2e2e2;
+
+  /* font */
+  --primary-font: #22232b;
+  --card-primary-font: #45454d;
+  --card-label-font: #989898;
+  --price: #8fb946;
+  --logo-name: #000603;
+  --logo-tagline: #9f9f9f;
+  --dmg-support: #6c46b9;
+  --pagination-unactive: #383b48;
+  --reset: #444444;
+
+  /* case */
+  --active-btn: #6b1d57;
+  --passive-btn: #d6d6d6;
+
+  /* gradient */
+  --grad-1-left: #6b1d57;
+  --grad-1-right: #33176c;
+
+  --date-1: #e73054;
+  --date-2: #b94646;
+
+  --expand-btn-1: #8fb946;
+  --expand-btn-2: #74b946;
+}

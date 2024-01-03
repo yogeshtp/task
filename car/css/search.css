@@ -1,0 +1,13 @@
+.search__section {
+  background-color: var(--primary-bg);
+}
+
+.search__filter--mark {
+  gap: 23px;
+}
+.search__filter--star {
+  background: #ffffff;
+  filter: drop-shadow(3px 6px 12px var(--star-shadow));
+  border-radius: 50%;
+  padding: 7px;
+}

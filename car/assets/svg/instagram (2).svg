@@ -1,0 +1,23 @@
+<svg id="instagram_2_" data-name="instagram (2)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.26" height="26.26" viewBox="0 0 26.26 26.26">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="red"/>
+      <stop offset="1" stop-color="#f0b"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2848" data-name="Group 2848">
+    <g id="Group_2847" data-name="Group 2847">
+      <path id="Path_18046" data-name="Path 18046" d="M18.054,0H8.206A8.207,8.207,0,0,0,0,8.206v9.847A8.207,8.207,0,0,0,8.206,26.26h9.847a8.207,8.207,0,0,0,8.206-8.206V8.206A8.207,8.207,0,0,0,18.054,0ZM23.8,18.054A5.751,5.751,0,0,1,18.054,23.8H8.206a5.751,5.751,0,0,1-5.744-5.744V8.206A5.751,5.751,0,0,1,8.206,2.462h9.847A5.751,5.751,0,0,1,23.8,8.206Z" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+  <g id="Group_2850" data-name="Group 2850" transform="translate(6.565 6.565)">
+    <g id="Group_2849" data-name="Group 2849">
+      <path id="Path_18047" data-name="Path 18047" d="M134.565,128a6.565,6.565,0,1,0,6.565,6.565A6.565,6.565,0,0,0,134.565,128Zm0,10.668a4.1,4.1,0,1,1,4.1-4.1A4.109,4.109,0,0,1,134.565,138.668Z" transform="translate(-128 -128)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+  <g id="Group_2852" data-name="Group 2852" transform="translate(19.312 5.198)">
+    <g id="Group_2851" data-name="Group 2851">
+      <circle id="Ellipse_75" data-name="Ellipse 75" cx="0.875" cy="0.875" r="0.875" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
