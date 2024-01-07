@@ -7,6 +7,7 @@
 @import url("./margin.css");
 @import url("./search.css");
 @import url("./listings.css");
+@import url("./checkbox.css");
 
 *,
 *:before,
@@ -22,4 +23,9 @@ body {
   background-color: pink;
   overflow-x: hidden;
   box-sizing: border-box;
+  outline: 0;
+}
+
+.cur-pointer {
+  cursor: pointer;
 }

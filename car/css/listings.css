@@ -6,28 +6,38 @@
 .listings__product--container > *:not(:first-child) {
   margin-top: 20px;
 }
+.product__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
 
+.products__shoping {
+  gap: 21px;
+  flex-wrap: wrap;
+}
 .listings-box .listings__filter {
   background-color: #ffffff;
   filter: drop-shadow(6px 12px 24px #44444414);
   max-width: 283px;
   width: 100%;
+  height: 498px;
 }
 .listings__filter form {
-  padding-top: 31px;
-  padding-left: 26px;
-  padding-right: 25px;
-  padding-bottom: 25px;
+  padding: 31px 25px 25px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
 .listings__filter select,
-input {
+.listings__filter input {
   width: 100%;
   background: transparent;
   border: none;
   border-bottom: 2px solid rgba(27, 27, 27, 0.1);
   padding-bottom: 5px;
   font-size: 17px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .filter__form--duration {
   gap: 16px;
@@ -54,6 +64,9 @@ input {
   border-bottom: 2px solid;
 }
 
+.filter__form--reset {
+  margin-top: -18px;
+}
 .filter__form--reset,
 .filter__form--submit {
   cursor: pointer;
@@ -234,4 +247,46 @@ input {
   content: "\2606";
   position: absolute;
   color: yellow;
+}
+
+/* pagination */
+.product__pagination {
+  max-width: 814px;
+  display: flex;
+  overflow-x: scroll;
+  gap: 49px;
+}
+
+.product__pagination a {
+  text-decoration: none;
+  color: black;
+  font-family: PoppinsMedium;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.product__pagination::-webkit-scrollbar {
+  display: none;
+}
+
+/* media query for pagination
+@media screen and (max-width: 767px) {
+  .product__pagination {
+    width: 100%;
+  }
+} */
+@media screen and (max-width: 767px) {
+  .product__wrapper {
+    gap: 20px;
+  }
+  .listings__filter {
+    display: none;
+  }
+  .cars-box{
+    margin: 0 14px 0px 16px;
+    flex-grow: 1;
+  }
+  .products__shoping{
+    flex-wrap: wrap;
+  }
 }

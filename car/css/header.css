@@ -11,11 +11,85 @@ header a {
   gap: 40px;
 }
 
+.nav__menuWrap {
+  display: flex;
+  gap: 48px;
+}
+
 .nav__btn {
   border: 2px solid var(--active-btn);
   border-radius: 5px;
 }
+
 header button {
   padding: 10px;
   box-shadow: 0px 8px 8px var(--sign-search-shadow);
+  display: flex;
+  align-items: center;
+}
+
+.nav__elements:not(:last-child):hover {
+  font-family: PoppinsSemiBold;
+  padding-bottom: 7.5px;
+  color: var(--active-btn);
+  font-family: PoppinsSemiBold;
+  border-bottom: 2px solid var(--active-btn);
+}
+
+.sign-in {
+  color: var(--active-btn);
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    width: 100%;
+  }
+
+  nav {
+    background-color: blueviolet;
+    padding: 0 16px;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    z-index: 2;
+  }
+
+  .nav__menuWrap {
+    width: 100%;
+    background-color: aqua;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    transition: all 0.6s linear;
+    z-index: 1;
+  }
+
+  .nav__btn span {
+    display: none;
+  }
+
+  .nav__menu {
+    overflow: hidden;
+  }
+
+  .show {
+    height: 100vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+/* media query for grid */
+@media screen and (max-width: 767px) {
+  .grid-container {
+  }
 }
