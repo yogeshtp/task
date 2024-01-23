@@ -1,0 +1,63 @@
+/* common */
+@import url("./color.css");
+@import url("./base.css");
+@import url("../font.css");
+@import url("./rangeCDN.css");
+@import url("../rangeSlider.css");
+
+/* components */
+@import url("../header.css");
+@import url("../search.css");
+@import url("../listings.css");
+@import url("../checkbox.css");
+@import url("../pagination.css");
+@import url("../footer.css");
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--body-bg);
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.fixed-layout {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.cur-pointer {
+  cursor: pointer;
+}
+
+.mob__filter--btn {
+  background-image: linear-gradient(var(--grad-1-left), var(--grad-1-right));
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: fixed;
+  top: 90%;
+  right: 20px;
+  z-index: 4;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .mob__filter--btn {
+    display: flex;
+  }
+}
+.mob__filter--unactive {
+  bottom: 0px;
+}

@@ -1,0 +1,12 @@
+{
+    "contractDetails": [
+        {
+            "number": "1",
+            "type": "SAP"
+        },
+        {
+            "number": "1",
+            "type": "SFDC"
+        }
+    ]
+}

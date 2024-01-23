@@ -29,6 +29,7 @@
 }
 .poppins__medium {
   font-family: PoppinsMedium;
+  font-weight: 900;
 }
 .poppins__semi {
   font-family: PoppinsSemiBold;

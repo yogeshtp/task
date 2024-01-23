@@ -5,9 +5,10 @@
 .grid-container {
   display: grid;
   grid-template-areas: "query query query query query view " "filter filter event event event event ";
-  /* grid-gap: 42px 10px; */
   align-items: center;
   padding-top: 47px;
+  padding-bottom: 20px;
+  column-gap: 80px;
 }
 
 .search__filter--mark {
@@ -19,6 +20,9 @@
   border-radius: 50%;
   padding: 7px;
 }
+.filter__form--submit {
+  margin-bottom: 8px !important;
+}
 .search__query {
   grid-area: query;
   gap: 43px;
@@ -28,7 +32,7 @@
   width: 100%;
   border: none;
   padding-bottom: 8px;
-  border-bottom: 3px solid red;
+  border-bottom: 2px solid var(--input-bottom-border);
 }
 
 .search__query input[type="text"] {
@@ -39,7 +43,7 @@
   max-width: 110px;
   padding-bottom: 8px;
   border: none;
-  border-bottom: 3px solid red;
+  border-bottom: 2px solid rgba(27, 27, 27, 0.1);
 }
 /* 2 */
 .search__view {
@@ -55,47 +59,58 @@
 .search__filter {
   grid-area: filter;
   display: flex;
-  gap: 111px;
+  /* gap: 111px; */
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+}
+.by-time {
+  max-width: 101px;
 }
 .search__filter select {
-  width: 100%;
+  /* width: 100%; */
   max-width: 144px;
   border: none;
   /* border-bottom: 3px solid black; */
   /* font-size: 16px; */
-  color: blue;
+  color: var(--dmg-support);
 }
 /* 4 */
 .search__event {
   grid-area: event;
   display: flex;
   justify-content: space-between;
+  /* justify-content: flex-end;
+  gap: 83px; */
 }
-
+.search__event label {
+  line-height: 26px;
+}
 @media screen and (max-width: 900px) {
   .grid-container {
-    grid-template-areas: "query query" "event event" "filter view";
+    grid-template-areas:
+      "query query query"
+      "event event event"
+      "filter filter view";
     width: 100%;
-    padding: 29.5px 22px 0 16px;
+    padding: 29.5px 22px 20px 16px;
   }
 
   .search__query {
     margin-bottom: 28px;
     gap: 23px;
   }
-  .grid-container .search__view{
-   gap: 26px;
-   align-items: center;
-   margin: 0;
+  .grid-container .search__view {
+    gap: 26px;
+    align-items: center;
+    margin: 0;
   }
 
-  .search__filter{
+  .search__filter {
     justify-content: space-between;
   }
-  .search__filter select{
-   font-size: 15px;
+  .search__filter select {
+    font-size: 15px;
+    /* min-width: 50px; */
   }
   .search__filter--mark > span {
     display: none;
@@ -103,5 +118,8 @@
 
   .search__event {
     margin-bottom: 26px;
+  }
+  .search__event label {
+    font-size: 13px;
   }
 }

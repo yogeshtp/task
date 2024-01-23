@@ -1,0 +1,38 @@
+/* pagination */
+.product__pagination {
+  display: flex;
+  justify-content: space-between;
+}
+.product__pages {
+  width: 737px;
+  display: flex;
+  gap: 38px;
+  overflow-x: scroll;
+}
+.product__pagination span {
+  display: block;
+  width: 42px;
+  height: 42px;
+  padding: 12px 11px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: PoppinsMedium;
+}
+.product__pages::-webkit-scrollbar {
+  display: none;
+}
+
+.pagination-active {
+  color: var(--primary-bg);
+  background-image: linear-gradient(var(--grad-1-left), var(--grad-1-right));
+}
+
+@media screen and (max-width: 767px) {
+  .product__pagination {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .product__pages {
+    max-width: 100%;
+  }
+}

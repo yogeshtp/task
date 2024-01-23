@@ -1,0 +1,51 @@
+.irs--flat .irs-line,
+.irs--flat .irs-bar {
+  height: 2px;
+  background-color: #1b1b1b1a;
+}
+
+.irs-with-grid .irs-grid {
+  display: none;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  font-size: 14px;
+  line-height: 20px;
+  color: #22232b;
+  background-color: transparent;
+  top: 35px;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+  color: #22232b;
+  background-color: transparent;
+  top: 35px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0px;
+}
+
+.irs--flat .irs-from::before,
+.irs--flat .irs-to::before,
+.irs--flat .irs-single::before {
+  display: none;
+}
+
+.irs--flat .irs-handle > i:first-child {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border: 2px solid #1b1b1b;
+  border-radius: 50%;
+}
+
+.irs--flat .irs-handle:hover > i:first-child {
+  background-color: #ffffff;
+}
+
+.irs--flat .irs-handle.from > i:first-child {
+  transform: translateX(-10px);
+}

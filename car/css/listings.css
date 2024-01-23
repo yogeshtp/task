@@ -1,11 +1,13 @@
 .listings-box {
   display: flex;
   justify-content: space-between;
+  gap: 29px;
 }
 
 .listings__product--container > *:not(:first-child) {
   margin-top: 20px;
 }
+
 .product__wrapper {
   display: flex;
   flex-direction: column;
@@ -16,19 +18,22 @@
   gap: 21px;
   flex-wrap: wrap;
 }
+
 .listings-box .listings__filter {
-  background-color: #ffffff;
+  background-color: var(--primary-bg);
   filter: drop-shadow(6px 12px 24px #44444414);
   max-width: 283px;
   width: 100%;
   height: 498px;
 }
+
 .listings__filter form {
   padding: 31px 25px 25px 26px;
   display: flex;
   flex-direction: column;
   gap: 22px;
 }
+
 .listings__filter select,
 .listings__filter input {
   width: 100%;
@@ -37,11 +42,12 @@
   border-bottom: 2px solid rgba(27, 27, 27, 0.1);
   padding-bottom: 5px;
   font-size: 17px;
-  /* margin-bottom: 20px; */
 }
+
 .filter__form--duration {
   gap: 16px;
 }
+
 .filter__form--submit {
   padding: 16px 0px 16px 15px;
   gap: 57px;
@@ -57,8 +63,9 @@
 }
 
 .filter__form--submit span {
-  color: #ffffff;
+  color: var(--primary-bg);
 }
+
 .listings__filter .form-reset {
   text-align: center;
   border-bottom: 2px solid;
@@ -67,6 +74,7 @@
 .filter__form--reset {
   margin-top: -18px;
 }
+
 .filter__form--reset,
 .filter__form--submit {
   cursor: pointer;
@@ -77,20 +85,19 @@
 .listings__product--container {
   width: 275px;
 }
+
 .listings__product--container .cars-box {
   padding: 8px 6.52px 15px 7.5px;
   width: 100%;
   filter: drop-shadow(6px 12px 24px var(--card-shadow));
   border-radius: 6px;
 }
-/* .cars-box > *{
-    width: 100%;
-} */
 
 /* car container */
 .cars-box {
-  background-color: green;
+  background-color: var(--primary-bg);
 }
+
 .car-box__header {
   background-image: linear-gradient(to right, var(--date-1), var(--date-2));
   border-radius: 5px;
@@ -102,8 +109,9 @@
 }
 
 .car-box__header--time {
-  color: #ffffff;
+  color: var(--primary-bg);
 }
+
 .car-box__picture {
   background-image: url("../assets/images/cars/Toyota-Camry-SE.png");
   height: 208px;
@@ -114,40 +122,50 @@
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
+#model-2 {
+  background-image: url("../assets/images/cars/car-5.png");
+}
 .car-box__picture > * {
   position: absolute;
 }
 
 .car-box__picture > .bookmark {
-  /* top: 15px; */
   right: 26px;
 }
+
 .car-box__picture--orderBtn {
   bottom: 10px;
   right: 9px;
 }
+
 .car-box__picture--orderBtn {
   width: 40px;
   height: 40px;
   border-radius: 15px;
-  background: #ffffff url("../assets/svg/law_purple.svg") no-repeat center;
+  background: var(--primary-bg) url("../assets/svg/law_purple.svg") no-repeat
+    center;
 }
+
 .car-box__title {
   padding-bottom: 9.5px;
   border: none;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--card-border);
 }
+
 .car-box__title span {
-  color: #45454d;
+  color: var(--card-primary-font);
 }
+
 .event__cause,
 .event__views {
   gap: 11px;
 }
+
 .car-box__event-count {
   border: none;
   padding-bottom: 7.5px;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--card-border);
 }
 
 .car-box__location {
@@ -156,22 +174,29 @@
   align-items: center;
   border: none;
   padding-bottom: 10px;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--card-border);
 }
 
 .car-box__address--label {
-  color: #989898;
+  color: var(--card-label-font);
 }
+
 .car-box__bid-price {
   margin-top: 10.5px;
 }
+
 .vertical-sepration {
-  border-left: 2px solid pink;
+  border-left: 2px solid var(--card-border);
   height: 30px;
 }
+
 .bid__price--buy,
 .bid__price--sold {
   gap: 11px;
+}
+.price-unit {
+  color: var(--price);
+  font-weight: 900;
 }
 .car-box__bid--expand {
   background-image: linear-gradient(
@@ -191,8 +216,9 @@
 .car-box__bid--expand {
   cursor: pointer;
 }
+
 .car-box__bid--expand > span {
-  color: white;
+  color: var(--primary-bg);
 }
 
 /* previous bid item / hidden items */
@@ -201,23 +227,28 @@
   flex-direction: column;
   gap: 3px;
 }
+
 .prev__bids--items .prev__bid-date {
   display: flex;
   gap: 10px;
 }
+
 .prev__bid--person {
   display: flex;
   justify-content: space-between;
 }
+
 .prev__bid--title {
   display: flex;
   gap: 16px;
 }
+
 .prev__bids--items:nth-child(1),
 .prev__bids--items:nth-child(2) {
   padding-bottom: 11.5px;
-  border-bottom: 2px solid yellow;
+  border-bottom: 2px solid var(--expanded-border);
 }
+
 .prev__bids--items:nth-child(2),
 .prev__bids--items:nth-child(3) {
   margin-top: 13.5px;
@@ -227,66 +258,74 @@
 .unactive {
   display: none;
 }
+
 .active {
   display: block;
 }
+
 .star--favourite {
   visibility: hidden;
   font-size: 45px;
   cursor: pointer;
 }
+
 .star--favourite:before {
   content: "\2605";
   position: absolute;
   visibility: visible;
-  color: red;
-  /* width: 40px;
-  height: 40px; */
+  color: yellow;
 }
+
 .star--favourite:checked:before {
   content: "\2606";
   position: absolute;
   color: yellow;
 }
 
-/* pagination */
-.product__pagination {
-  max-width: 814px;
-  display: flex;
-  overflow-x: scroll;
-  gap: 49px;
+/* transition for mobile device */
+
+.listings__filter {
+  transition: all 0.5s;
 }
 
-.product__pagination a {
-  text-decoration: none;
-  color: black;
-  font-family: PoppinsMedium;
-  font-size: 13px;
-  line-height: 18px;
-}
-
-.product__pagination::-webkit-scrollbar {
-  display: none;
-}
-
-/* media query for pagination
 @media screen and (max-width: 767px) {
-  .product__pagination {
+  .listings-box {
     width: 100%;
   }
-} */
-@media screen and (max-width: 767px) {
   .product__wrapper {
     gap: 20px;
+    width: 100%;
+  }
+
+  .listings__filter {
+    min-width: 100%;
+    position: fixed;
+    bottom: -100%;
+    left: 0px;
+    right: 10px;
+    z-index: 3;
+  }
+
+  .cars-box {
+    flex-grow: 1;
+    width: 100%;
+  }
+  .products__shoping {
+    flex-wrap: wrap;
+  }
+
+  .listings__product-box {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .listings__product--container {
+    width: 345px;
+  }
+  .grid-container {
+    column-gap: 10px;
   }
   .listings__filter {
-    display: none;
-  }
-  .cars-box{
-    margin: 0 14px 0px 16px;
-    flex-grow: 1;
-  }
-  .products__shoping{
-    flex-wrap: wrap;
+    box-shadow: 0px -200px 100px rgba(121, 117, 117, 0.679);
   }
 }
