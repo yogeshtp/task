@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Custom Event</title>
+</head>
+
+<body>
+    <div class="note">JS Custom Event</div>
+    <script>
+        function highlight(elem) {
+            const bgColor = 'yellow';
+            elem.style.backgroundColor = bgColor;
+            let event = new CustomEvent('highlight', {
+                detail: {
+                    backgroundColor: bgColor
+                }
+            });
+            elem.dispatchEvent(event);
+        }
+        let div = document.querySelector('.note');
+        function addBorder(elem) {
+            elem.style.border = "solid 1px red";
+        }
+        div.addEventListener('highlight', function (e) {
+            addBorder(this);
+            console.log(e.detail);
+        });
+
+        setTimeout(() => {
+            highlight(div);
+        }, 3000);
+    </script>
+</body>
+
+</html>
