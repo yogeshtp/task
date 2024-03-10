@@ -6,7 +6,9 @@ let input = "";
 
 keys.forEach((key) => {
   const value = key.dataset.key;
-  key.addEventListener("click", () => handleButtonClick(value));
+  key.addEventListener("click", () => {
+    handleButtonClick(value);
+  });
 });
 
 // reusable logic
@@ -86,12 +88,26 @@ function handleBrackets() {
   inputDisplay.innerHTML = cleanInput(input);
 }
 
+// function handleDefault(value) {
+//   // const validKeys = /^[0-9+\-*/.=()%]|Enter|Escape|Backspace$/;
+//   // if (validKeys.test(value)) {
+//   // }
+//   if (isInputKey(value) && validateInput(value)) {
+//     input += value;
+//     inputDisplay.innerHTML = cleanInput(input);
+//   }
+// }
+
+
 function handleDefault(value) {
-  //   console.log("normal value", value);
-  if (isInputKey(value) && validateInput(value)) {
-    input += value;
+  const validKeys = /^[0-9+\-*/.=()%]|Enter|Escape|Backspace$/;
+  if (validKeys.test(value)) {
+    if (value === "-" && input.slice(-1) === "") {
+      input += value;
+    } else if (isInputKey(value) && validateInput(value)) {
+      input += value;
+    }
     inputDisplay.innerHTML = cleanInput(input);
-    // console.log(inputDisplay.innerHTML)
   }
 }
 
@@ -105,8 +121,9 @@ function calculateExpression(input) {
   return calculate(input);
 }
 
+// main logic start
 function calculate(input) {
-  console.log("calculate:", input);
+  console.log("calculate:", input, typeof input);
   let operators = [];
   let operands = [];
 
@@ -136,25 +153,49 @@ function calculate(input) {
       case "/":
         operands.push(operand1 / operand2);
         break;
+      case "%":
+        operands.push(operand1 % operand2);
+        break;
     }
   };
 
   for (let i = 0; i < input.length; i++) {
     const char = input[i];
-
+    console.log("char", char, typeof char);
     if (char === " ") {
       continue;
-    } else if (char >= "0" && char <= "9") {
+    }
+    // this condition
+    else if (
+      (char >= "0" && char <= "9") ||
+      (char === "-" && (i === 0 || isOperator(input[i - 1])))
+    ) {
       let num = parseFloat(char);
+      console.log("num", num);
       while (
         i + 1 < input.length &&
         ((input[i + 1] >= "0" && input[i + 1] <= "9") || input[i + 1] === ".")
       ) {
-        num = num * 10 + parseFloat(input[i + 1]);
-        i++;
+        if (input[i + 1] === ".") {
+          num += ".";
+          i++;
+          while (
+            i + 1 < input.length &&
+            ((input[i + 1] >= "0" && input[i + 1] <= "9") ||
+              input[i + 1] === ".")
+          ) {
+            num += input[i + 1];
+            i++;
+          }
+        } else {
+          num = num * 10 + parseFloat(input[i + 1]);
+          i++;
+        }
       }
-      operands.push(num);
-    } else if (isOperator(char)) {
+      operands.push(parseFloat(num));
+    }
+    // end this condition
+    else if (isOperator(char)) {
       while (
         operators.length > 0 &&
         isOperator(operators[operators.length - 1]) &&
@@ -177,11 +218,15 @@ function calculate(input) {
     performOperation();
   }
 
-  return operands[0];
+  console.log("operands", operands[0], typeof operands[0]);
+  if (operands[0] % 1 == 0) {
+    return operands[0];
+  } else {
+    return operands[0].toFixed(6);
+  }
 }
-
+// main logic end
 function cleanInput(input) {
-  //   console.log(input);
   let inputArray = input.split("");
   for (let i = 0; i < inputArray.length; i++) {
     if (inputArray[i] == "*") {
@@ -225,9 +270,11 @@ function cleanOutput(output) {
 }
 
 function validateInput(value) {
+  console.log("validateInput", input);
   let lastInput = input.slice(-1);
+  let firstInput = input.slice(0);
+  console.log("firstInput", firstInput);
   let operators = ["+", "-", "*", "/"];
-
   if (value == "." && lastInput == ".") {
     return false;
   }
@@ -244,20 +291,16 @@ function validateInput(value) {
 }
 
 function prepareInput(input) {
+  console.log("prepareInput:", input);
   let inputArray = input.split("");
-  console.log(inputArray);
-  inputArray.forEach((element, index, array) => {
-    if (element === "%") {
-      array[index] = "/100";
-    }
-  });
 
+  console.log("prepareInput:", inputArray);
+  // inputArray.forEach((element, index, array) => {
+  //   if (element === "%") {
+  //     array[index] = "/100";
+  //   }
+  // });
   return inputArray.join("");
 }
 
-// function test(input) {
-//   let x = cleanInput(input);
-//   console.log(x);
-// }
-// let a = "124";
-// test(a);
+console.log("X");

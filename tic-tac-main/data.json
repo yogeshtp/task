@@ -1,0 +1,47 @@
+[
+  {
+      "name":"sumit",
+      "surname": "rai",
+      "id":1,
+      "email": "sumitrai1606@gmail.com",
+      "password":"Sumit123",
+      "bankBalance": 13955,
+      "debitCard": "Y",
+      "creditCard": "N",
+      "active":"Y",
+      "creditScore":"320",
+      "accountOpeningdate":"06/12/2020",
+      "dailyLimit": 5000,
+      "loan":"applicable"
+  },
+  {
+      "name":"shivam",
+      "surname": "rai",
+      "id":2,
+      "email": "sumitrai1606@gmail.com",
+      "password":"Shivam321",
+      "bankBalance": 50000,
+      "debitCard": "Y",
+      "creditCard": "N",
+      "active":"Y",
+      "creditScore":"800",
+      "accountOpeningdate":"06/12/2020",
+      "dailyLimit": 10000,
+      "loan":"applicable"
+  },
+  {
+    "name":"tanmay",
+    "surname": "vedpathak",
+    "id":3,
+    "email": "tanmay@gmail.com",
+    "password":"123",
+    "bankBalance": 0,
+    "debitCard": "Y",
+    "creditCard": "N",
+    "active":"Y",
+    "creditScore":"320",
+    "accountOpeningdate":"06/12/2020",
+    "dailyLimit": 5000,
+    "loan":"applicable"
+}
+]

@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ecf5fa;
+}
+.rider__options {
+  background-color: #fff;
+}
+.container {
+  max-width: 1206px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 63px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.container h2,
+.container .container__description {
+  text-align: center;
+}
+
+.container .container__description {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.cards {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  /* flex-wrap: wrap; */
+}
+
+.card {
+  border: 1px solid lightskyblue;
+  padding: 20px;
+  border-radius: 10px;
+}
+.card__heading {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.card__heading img {
+  background-color: #fae4e9;
+  border-radius: 50%;
+  padding: 5px;
+}
+.card__heading p {
+  font-size: 12px;
+  color: #0073bb;
+  font-weight: 700;
+}
+.card__heading span {
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+}
+.card__heading--des {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.know__more {
+  margin-top: 24px;
+}

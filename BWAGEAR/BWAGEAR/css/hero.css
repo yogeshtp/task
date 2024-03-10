@@ -1,0 +1,200 @@
+#hero {
+  background-color: var(--background-black);
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 112px;
+  gap: 93px;
+}
+
+.container-left {
+  max-width: 554px;
+}
+
+.hero__heading {
+  font-size: 40px;
+  line-height: 61px;
+  color: white;
+}
+.hero__description {
+  font-size: 18px;
+  line-height: 36px;
+  color: white;
+  margin-top: 16px;
+}
+
+.hero__button {
+  margin-top: 24px;
+  max-width: 177px;
+}
+
+.hero__usercounts {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+.userone {
+  position: relative;
+}
+.usertwo {
+  position: absolute;
+  top: 0;
+  left: 23px;
+}
+.usercounts {
+  margin-left: 15px;
+}
+
+.usercounts span {
+  color: var(--accent-blue);
+}
+.usercounts {
+  color: white;
+}
+
+.container-right {
+  max-width: 475px;
+}
+
+.container-right img {
+  max-width: 447px;
+}
+
+.dottedcircle {
+  position: relative;
+  max-width: 447px;
+  max-height: 447px;
+}
+
+.figma {
+  position: absolute;
+  top: -51px;
+  left: 172px;
+}
+
+.in {
+  position: absolute;
+  top: 62px;
+  right: -12px;
+}
+.github {
+  position: absolute;
+  bottom: 60px;
+  right: -12px;
+}
+.xd {
+  position: absolute;
+  bottom: -51px;
+  left: 172px;
+}
+.vscode {
+  position: absolute;
+  bottom: 60px;
+  left: -12px;
+}
+.pycharm {
+  position: absolute;
+  top: 62px;
+  left: -12px;
+}
+
+.gear {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  width: 103px;
+  height: 103px;
+  border-radius: 100px;
+  background-color: var(--bold-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .container-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    gap: 60px;
+  }
+  .dottedcircle {
+    position: relative;
+    max-width: 315px;
+    max-height: 315px;
+  }
+  .dottedcircle img {
+    max-width: 315px;
+    max-height: 315px;
+  }
+  .figma {
+    position: absolute;
+    top: -36px;
+    left: 121px;
+  }
+
+  .in {
+    position: absolute;
+    top: 44px;
+    right: -8px;
+  }
+  .github {
+    position: absolute;
+    bottom: 44px;
+    right: -8px;
+  }
+  .xd {
+    position: absolute;
+    bottom: -36px;
+    left: 121px;
+  }
+  .vscode {
+    position: absolute;
+    bottom: 44px;
+    left: -13px;
+  }
+  .pycharm {
+    position: absolute;
+    top: 44px;
+    left: -13px;
+  }
+
+  .gear {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .gear img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo {
+    width: 72.57px;
+    height: 72.57px;
+    border-radius: 70px;
+  }
+
+  .logo img {
+    width: 44px;
+    height: 44px;
+  }
+}

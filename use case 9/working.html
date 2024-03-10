@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr;
+            gap: 10px;
+        }
+
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .grid-item.full-height {
+            grid-row: span 2;
+        }
+
+        @media (max-width: 767px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto;
+            }
+
+            .grid-item.full-height {
+                grid-row: auto;
+            }
+
+            .grid-item:nth-child(1) {
+                order: 2;
+            }
+
+            .grid-item:nth-child(2) {
+                order: 1;
+            }
+
+            .grid-item:nth-child(3) {
+                order: 3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item full-height"> 
+            <img src="./SnachayPlusBannerBG.png" alt="">
+        </div>
+        <div class="grid-item">
+            <div class="sanchayPlus__content--heading">
+                <h2>HDFC Life Sanchay Plus</h2>
+            </div>
+            <div class="sanchayPlus__content--info">
+                <p>A savings plan that takes you closer to your dreams and secures your family’s future.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="sanchayPlus__content--features">
+                <ul class="sanchayPlus__content--featuresList">
+                    <li class="sanchayPlus__content--featuresItem">
+                        Income tax1 benefits
+                    </li>
+                    <li class="sanchayPlus__content--featuresItem">
+                        Guaranteed4 benefits on maturity
+                    </li>
+                    <li class="sanchayPlus__content--featuresItem">
+                        Income tax1 benefits
+                    </li>
+                    <li class="sanchayPlus__content--featuresItem">
+                        Income tax1 benefits
+                    </li>
+                </ul>
+            </div>
+            <div class="sanchayPlus__content--benefit">
+                <p>Pay ₹50,000 for 10 years and get guaranteed ₹45,578 anually for 25 years12</p>
+            </div>
+            <div class="sanchayPlus__content--calculatePremium">
+                <a href="#">Calculate Premium</a>
+            </div>
+            <div class="sanchayPlus__content--arn">
+                <p>ARN:ED/09/21/25571</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

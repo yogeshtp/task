@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.insurance__solutions {
+  background-color: #f2fbff;
+}
+.insurance__solutions .wrapper {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+.insurance__solutions .wrapper {
+  padding: 50px 0px;
+}
+.insurance__solutions--title {
+  text-align: center;
+}
+
+.insurance__solutions--heading {
+  color: #233253;
+  font-family: Poppins, sans-serif;
+  position: relative;
+  font-size: 32px;
+  line-height: 29px;
+}
+
+.insurance__solutions--description {
+  font-size: 17px;
+  color: gray;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.solutions__Container {
+  margin-top: 35px;
+  display: flex;
+  gap: 15px;
+}
+/* card */
+.solutions__card {
+  padding: 25px 20px;
+  background-color: white;
+  max-width: 100%;
+  width: 90%;
+  border-radius: 20px;
+}
+.solutions__card--planName {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.solutions__card--name {
+  color: black;
+  font-size: 18px;
+  font-weight: 900;
+}
+.solution__card--tagImage {
+  width: 15px;
+}
+.solutions__card--tag {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background-color: #fde7e8;
+  padding: 2px 6px;
+}
+.solution__card--tagContent {
+  color: #ed1c24;
+  font-weight: 600;
+}
+
+.solutions__card--title {
+  font-size: 13px;
+  color: #8e8e8e;
+  font-weight: 400;
+}
+
+.solutions__card--heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #005e9e;
+}
+.solutions__heading--name {
+  color: #ed1c24;
+}
+
+.solutions__card--UIN {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444;
+}
+
+.solutions__card--description {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444;
+}
+
+.solutions__card--MonthlyPremium {
+  background-color: #e5eef5;
+  font-size: 13px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #005e9e;
+  text-align: center;
+}
+
+.solutions__card--breakLine {
+  border-bottom: 5px solid #ed1c24;
+  width: 70px;
+  margin-top: 10px;
+}
+
+.solutions__card--benefits {
+  margin-top: 10px;
+  list-style: none;
+}
+.solution__card--benefitsItem {
+  font-size: 13px;
+  position: relative;
+  padding-left: 20px;
+  line-height: 22px;
+}
+.solution__card--benefitsItem span {
+  color: #2776ab;
+  background-color: #e5eef5;
+}
+.solution__card--benefitsItem:not(:last-child) {
+  margin-bottom: 10px;
+}
+.solution__card--benefitsItem::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -0px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-image: url("../shieldicon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.solutions__card--explore {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #ed1c24;
+  margin-top: 10px;
+}
+.solutions__card--explore span {
+  text-decoration: underline;
+  margin-right: 2px;
+  font-size: 15px;
+}
+.solutions__card--calculate {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 8px 12px rgb(237 28 36 / 20%);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.solutions__card--calculatePremium {
+  padding: 5px 9px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.owl-dots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+.owl-carousel button.owl-dot {
+  background-color: grey;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.owl-carousel button.owl-dot.active {
+  background-color: #233253;
+}
+
+.owl-stage-outer {
+  margin: 0 20px;
+}

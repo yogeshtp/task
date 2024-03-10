@@ -1,0 +1,21 @@
+.tools-numbercolor-blue{
+    color: var(--accent-blue);
+}
+.tools-numbercolor-blue{
+    color: var(--accent-green);
+}
+.tools-numbercolor-blue{
+    color: var(--accent-red);
+}
+
+.tools-number-text{
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.tools-title-font{
+    font-size: 24px;
+    height: 36px;
+    font-weight: 500;
+}

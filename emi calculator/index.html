@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+    <link rel='stylesheet' href='./css/style.css'>
+    <link rel='stylesheet' href='./css/customRange.css'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <div class="emi__container">
+        <section class="emi__sliders">
+            <!-- loan amount -->
+            <div class="loan__amount">
+                <div class="loan__amount--header flex-container">
+                    <p>Loan Amount</p>
+                    <div class="loan__header--box">
+                        <span>₹</span>
+                        <input type="text" id="loan__amount--input">
+                    </div>
+                </div>
+                <input type="text" id="loan-range" class="js-range-slider name=" my_range" value="" />
+            </div>
+            <!-- loan duration -->
+            <div class=" loan__duration">
+                <div class="loan__duration--header flex-container">
+                    <p>Loan Duration</p>
+                    <div class="loan__duration--box">
+                        <!-- <div class="loan__duration--number"> -->
+                        <input type="text" name="loan__duration" id="loan__duration--input">
+                        <!-- </div> -->
+                        <div class="loan__duration--period" id="loan__duration--period">
+                            <p class="period-active" id="year">Yr</p>
+                            <p id="month">Mo</p>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" class="js-range-slider " id="duration-range" name="my_range" value="" />
+            </div>
+            <!-- Rate of interest -->
+            <div class="loan__interest">
+                <div class="loan__interest--header flex-container">
+                    <p>Rate of interest</p>
+                    <div class="loan__interest--box">
+                        <input type="text" name="rate__interest" id="loan__interest--input">
+                        <span>%</span>
+                    </div>
+                </div>
+                <input type="text" class="js-range-slider" id="interest-range" name="my_range" value="" />
+            </div>
+        </section>
+        <!-- chart -->
+        <section class="emi__charts">
+            <!-- monthly emi -->
+            <div class="montly__emi">
+                <p>Monthly Emi</p>
+                <h2 id="resultEMI">₹4,660*</h2>
+
+            </div>
+            <!-- chart js -->
+            <div class="emi__charts--chart">
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <p id="total_amount_dynamic">Total Amount Payable:</p>
+                <p id="total_interest_dynamic">Total Interest Payable:</p>
+            </div>
+            <!-- apply button -->
+            <div class="apply__now">
+                Apply Now
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src='/js/script.js'></script>
+    <!-- <script src='/js/try.js'></script> -->
+</body>
+
+</html>

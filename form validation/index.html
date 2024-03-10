@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="phone">Phone</label>
+      <input id="phone_number" type="text" required placeholder="Phone" />
+      <p id="phoneIsValid">
+        <!-- Validation message for phone -->
+      </p>
+
+      <label for="email">Email</label>
+      <input id="email_id" type="email" required placeholder="Email" />
+      <p id="emailIsValid">
+        <!-- Validation message for email -->
+      </p>
+
+      <input type="submit" value="Submit" id="submit_btn" />
+    </form>
+    <div class="msg">
+      <p>hello yogesh thanks for submitting the form</p>
+      <p id="yourNumber">your phone numbner is:</p>
+      <p id="yourEmail">your email id is:</p>
+    </div>
+    <!-- <input type="number" id="test" placeholder="test" /> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

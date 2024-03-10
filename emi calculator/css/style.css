@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(to right, #f2f2d4, #e1e8ef);
+  height: 100vh;
+  position: relative;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.js-range-slider {
+  width: 100%;
+}
+/* emi */
+.emi__container {
+  /* width: 0%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fcfcfc;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /* gap: 30px; */
+  border-radius: 20px;
+}
+.emi__container section {
+  padding: 20px;
+}
+/* slider */
+.emi__sliders {
+  background-color: #fdfdfb;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+/* loan amount */
+
+.loan__amount--header
+.loan__header--box {
+  display: flex;
+  /* background-color: #ffffff; */
+  border: 1px solid blue;
+  background-color: yellow;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+.loan__header--box input {
+  width: 100px;
+  border: none;
+  background: transparent;
+  margin-left: 5px;
+  height: 100%;
+}
+
+.loan__header--box span {
+  border-right: 1px solid red;
+  padding-right: 5px;
+  text-align: center;
+}
+
+/* load duration */
+.loan__duration--number {
+  border: 1px solid green;
+}
+.loan__duration--box input {
+  padding: 5px;
+  width: 40px;
+  border: none;
+}
+.loan__duration--box {
+  display: flex;
+  gap: 10px;
+}
+.loan__duration--period {
+  border: 1px solid brown;
+  display: flex;
+  border-radius: 5px;
+  gap: 2px;
+  cursor: pointer;
+}
+.period-active {
+  color: white;
+  background-color: red;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+/* rate of interest */
+.loan__interest--header input {
+  border: none;
+  width: 100px;
+  padding: 2px;
+}
+.loan__interest--box {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid brown;
+}
+.loan__interest--box span {
+  padding-left: 5px;
+  border-left: 2px solid green;
+}
+
+
+
+
+

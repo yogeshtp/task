@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.HDFCLifeSanchayPlus .wrapper {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  padding: 78px 0px 58px;
+}
+.HDFCLifeSanchayPlus .wrapper {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+}
+
+.grid-item.full-height {
+  grid-row: span 2; /* Span the full height */
+}
+
+.snachayPlus__banner img {
+  width: 100%;
+}
+.snachayPlus__content {
+  padding: 0 20px;
+}
+.sanchayPlus__content--heading h2 {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 69px;
+  color: #233253;
+  max-width: 600px;
+}
+
+.sanchayPlus__content--info p {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+  max-width: 652px;
+}
+.sanchayPlus__content--featuresList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+.sanchayPlus__content--featuresItem {
+  position: relative;
+  padding-left: 20px;
+  font-size: 18px;
+}
+.sanchayPlus__content--featuresItem::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -9px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url("./sanchayPlusListIcon.svg") no-repeat;
+}
+
+.sanchayPlus__content--benefit {
+  margin-top: 40px;
+  background: linear-gradient(
+    90deg,
+    #f9f9f9 0.1%,
+    #cfdfe9 52.71%,
+    #f9f9f9 100%
+  );
+  width: 100%;
+}
+.sanchayPlus__content--benefit p {
+  text-align: center;
+  padding: 15px 0px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+.sanchayPlus__content--calculatePremium {
+  margin-top: 40px;
+}
+.sanchayPlus__content--calculatePremium a {
+  text-decoration: none;
+  /* margin-top: 40px; */
+  background-color: #ed1c24;
+  padding: 10px 29px;
+  width: 100%;
+  color: #ffffff;
+}
+.sanchayPlus__content--arn p {
+  margin-top: 22px;
+  text-align: end;
+}
+@media (max-width: 768px) {
+  .sanchayPlus__content--featuresList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

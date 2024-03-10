@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <form>
+      <label for="phone">Phone</label>
+      <input id="phone_number" type="text" required placeholder="Phone" />
+      <p id="phoneIsValid">
+        <!-- Validation message for phone -->
+      </p>
+
+      <label for="email">Email</label>
+      <input id="email_id" type="email" required placeholder="Email" />
+      <p id="emailIsValid">
+        <!-- Validation message for email -->
+      </p>
+
+      <input type="submit" value="Submit" id="submit_btn" />
+    </form>
+
+    <script>
+        "use strict";
+        let phoneNumber = document.querySelector("#phone_number");
+        let emailId = document.getElementById("email_id");
+        let submitBtn = document.querySelector("#submit_btn");
+        let phoneIsValid = document.getElementById("phoneIsValid");
+        let emailIsValid = document.getElementById("emailIsValid");
+        let allValidity = [false, false];
+      
+        function ifNotValid() {
+          submitBtn.style.color = "red";
+          submitBtn.setAttribute("disabled", "");
+          submitBtn.style.cursor = "not-allowed";
+        }
+      
+        function ifValid() {
+          submitBtn.style.color = "green";
+          submitBtn.removeAttribute("disabled");
+          submitBtn.style.cursor = "pointer";
+        }
+      
+        function isvalidInfo() {
+          // Phone
+          phoneNumber.addEventListener("input", function (event) {
+            let inputValue = event.target.value.replace(/\D/g, ""); 
+            if (inputValue.length > 10) {
+              event.target.value = inputValue.slice(0, 10);
+            }
+      
+            if (event.target.value.length === 10) {
+              allValidity[0] = true;
+            } else {
+              allValidity[0] = false;
+            }
+      
+            phoneIsValid.innerText = allValidity[0];
+            phoneIsValid.innerText === "true" && emailIsValid.innerText === "true"
+              ? ifValid()
+              : ifNotValid();
+          });
+      
+          // Email
+          emailId.addEventListener("input", function () {
+            let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            emailIsValid.innerText = emailRegex.test(emailId.value);
+            allValidity[1] = emailRegex.test(emailId.value);
+            phoneIsValid.innerText === "true" && emailIsValid.innerText === "true"
+              ? ifValid()
+              : ifNotValid();
+          });
+        }
+      
+        isvalidInfo();
+      </script>
+      
+  </body>
+</html>
+
+
